@@ -4,7 +4,45 @@ html, body {
   font-family: 'Raleway', Helvetica, sans-serif;
   min-width: 320px;
 }
-
+/* .form-container{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    background: pink;
+} */
+.form-row{
+    display: grid;
+    grid-template-columns: 25em 20em;
+    flex-direction: row;
+    justify-content: center;
+    background: green;
+}
+.labels{
+    background: pink;
+}
+.form-text-inputs{
+    background:blue;
+}
+.form-number-inputs{
+    background: lightgreen;
+}
+.form-email-inputs{
+    background: yellow;
+}
+.form-selector{
+    background: red;
+}
+.form-radio-inputs{
+    color:purple;
+    background: orangered;
+    display: flex;
+    flex-direction: column;
+}
+.radio-row{
+    display:flex;
+    flex-direction: row;
+}
 /* form{
     background: pink;
 } */

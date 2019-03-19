@@ -14,10 +14,10 @@
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
         <!-- ============= -->
         <h1 id=title>Survey Form</h1>
-        <div id="form-content">
+        <div id="form-content" >
             <p id="description">Let us know how we can improve our service.</p>
-            <form action="" target="_self" id="survey-form">
-                <div class="form-row">
+            <form action="" target="_self" id="survey-form"class="form-container">
+                <div class="form-row" >
                     <div class="labels">
                         <label for="name">* Name: </label>
                     </div>
@@ -28,13 +28,13 @@
                     <div class="labels">
                         <label for="email-input">* Email: </label>
                     </div>
-                    <input class="form-text-inputs" id="email" type="email" placeholder="Email" required>
+                    <input class="form-email-inputs" id="email" type="email" placeholder="Email" required>
                 </div>
                 <div class="form-row">
                     <div class="labels">
                         <label for="age-input">* Age: </label>
                     </div>
-                    <input class="form-text-inputs" id="number" type="number" placeholder="Age" required>
+                    <input class="form-number-inputs" id="number" type="number" placeholder="Age" required>
                 </div>
                 <div class="form-row">
                     <div class="labels">
@@ -53,9 +53,13 @@
                     <div class="labels">
                         <label for="recommend-option">* Would you recommend freeCodeCamp to a friend?</label>
                     </div>
-                    <input class="form-radio-input" name="recommend-option" type="radio" value="Definitely">Definitely<br>
-                    <input class="form-radio-input" name="recommend-option" type="radio" value="Maybe">Maybe<br>
-                    <input class="form-radio-input" name="recommend-option" type="radio" value="Not sure">Not sure<br>
+                    
+                    <div class="form-radio-inputs">
+                        <span class="radio-row"><input class="form-radio-input" name="recommend-option" type="radio" value="Definitely">Definitely</span>
+                        <span class="radio-row"><input class="form-radio-input" name="recommend-option" type="radio" value="Maybe">Maybe</span>
+                        <span class="radio-row"><input class="form-radio-input" name="recommend-option" type="radio" value="Not sure">Not sure</span>
+                    </div>
+                    
                 </div>
                 <div class="form-row">
                     <div class="labels">
@@ -87,13 +91,12 @@
                 </div>
                 <div class="form-row">
                     <div class="labels">
-                        <label for="">Any Comments or Suggenstions</label>
+                        <label for="">Write any Comments or Suggestions</label>
                     </div>
                     <textarea name="form-text-area" id="comment-box" cols="30" rows="10"></textarea>
                 </div>
             </form>
         </div>
-        
         <!-- =============== -->
         <script src="js/index.js"></script>
     </body>
