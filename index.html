@@ -11,39 +11,85 @@
     </head>
 
     <body>
-        <!-- ============= -->
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <!-- ============= -->
         <h1 id=title>Survey Form</h1>
         <div id="form-content">
             <p id="description">Let us know how we can improve our service.</p>
-            <form target="_self" id="survey-form">
-                <div>
-                        <label for="name-input">* Name: </label>
-                        <input id="name-input" type="text" placeholder="Enter your name">
+            <form action="" target="_self" id="survey-form">
+                <div class="form-row">
+                    <div class="labels">
+                        <label for="name">* Name: </label>
+                    </div>
+                    <input class="form-text-inputs" id="name" type="text" placeholder="Enter your name" required>
                 </div>
                 
-                <div>
-                    <div>
+                <div class="form-row">
+                    <div class="labels">
                         <label for="email-input">* Email: </label>
                     </div>
-                        <input id="email-input" type="text" placeholder="Email">
+                    <input class="form-text-inputs" id="email" type="email" placeholder="Email" required>
                 </div>
-                <div>
-                    <div>
+                <div class="form-row">
+                    <div class="labels">
                         <label for="age-input">* Age: </label>
                     </div>
-                        <input id="age-input" type="text" placeholder="Age">
+                    <input class="form-text-inputs" id="number" type="number" placeholder="Age" required>
                 </div>
-                <div>
-                    <div>
-                        <label for="role-select">Which option best describes your current role?</label>
+                <div class="form-row">
+                    <div class="labels">
+                        <label for="role-select">Which option describes your current role?</label>
                     </div>
-                        <select id="role-select" placeholder="Select an option">
-                            <option disabled value selected>Select an option</option>
-                            <option>Select an option</option>
-                            <option>Select an option</option>
-                            <option>Select an option</option>
-                        </select>
+                    <select id="role-select" placeholder="Select an option" class="form-selector">
+                        <option disabled value selected>Select an option</option>
+                        <option>Student</option>
+                        <option>Full Time Job</option>
+                        <option>Full Time Learner</option>
+                        <option>Prefer Not To Say</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <div class="labels">
+                        <label for="recommend-option">* Would you recommend freeCodeCamp to a friend?</label>
+                    </div>
+                    <input class="form-radio-input" name="recommend-option" type="radio" value="Definitely">Definitely<br>
+                    <input class="form-radio-input" name="recommend-option" type="radio" value="Maybe">Maybe<br>
+                    <input class="form-radio-input" name="recommend-option" type="radio" value="Not sure">Not sure<br>
+                </div>
+                <div class="form-row">
+                    <div class="labels">
+                        <label for="favorite-select">What do you like most in FCC</label>
+                    </div>
+                    <select id="favorite-select" placeholder="Select an option" class="form-selector">
+                        <option disabled value selected>Select an option</option>
+                        <option>Challenges</option>
+                        <option>Projects</option>
+                        <option>Community</option>
+                        <option>Open Source</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <div class="labels">
+                        <label for="">What should be improved?<br>(Check all that apply):</label>
+                    </div>
+                    <input type="checkbox" name="improve1" id="front-end-projects">Front-end Projects<br>
+                    <input type="checkbox" name="improve2" id="back-end-projects">Back-end Projects<br>
+                    <input type="checkbox" name="improve3" id="data-visualization">Data Visualization<br>
+                    <input type="checkbox" name="improve3" id="data-visualization">Challenges<br>
+                    <input type="checkbox" name="improve3" id="data-visualization">Open Source Community<br>
+                    <input type="checkbox" name="improve3" id="data-visualization">Gitter help rooms<br>
+                    <input type="checkbox" name="improve3" id="data-visualization">Videos<br>
+                    <input type="checkbox" name="improve3" id="data-visualization">City Meetups<br>
+                    <input type="checkbox" name="improve3" id="data-visualization">Wiki<br>
+                    <input type="checkbox" name="improve3" id="data-visualization">Forum<br>
+                    <input type="checkbox" name="improve3" id="data-visualization">Additional Courses<br>
+                </div>
+                <div class="form-row">
+                    <div class="labels">
+                        <label for="">Any Comments or Suggenstions</label>
+                    </div>
+                    <textarea name="form-text-area" id="comment-box" cols="30" rows="10"></textarea>
                 </div>
             </form>
         </div>
