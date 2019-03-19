@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>frontend-template</title>
+        <meta name="description" content="frontend-template">
+        <meta name="author" content="Dennis Vargas">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <!-- ============= -->
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <h1 id=title>Survey Form</h1>
+        <div id="form-content">
+            <p id="description">Let us know how we can improve our service.</p>
+            <form target="_self" id="survey-form">
+                <div>
+                        <label for="name-input">* Name: </label>
+                        <input id="name-input" type="text" placeholder="Enter your name">
+                </div>
+                
+                <div>
+                    <div>
+                        <label for="email-input">* Email: </label>
+                    </div>
+                        <input id="email-input" type="text" placeholder="Email">
+                </div>
+                <div>
+                    <div>
+                        <label for="age-input">* Age: </label>
+                    </div>
+                        <input id="age-input" type="text" placeholder="Age">
+                </div>
+                <div>
+                    <div>
+                        <label for="role-select">Which option best describes your current role?</label>
+                    </div>
+                        <select id="role-select" placeholder="Select an option">
+                            <option disabled value selected>Select an option</option>
+                            <option>Select an option</option>
+                            <option>Select an option</option>
+                            <option>Select an option</option>
+                        </select>
+                </div>
+            </form>
+        </div>
+        
+        <!-- =============== -->
+        <script src="js/index.js"></script>
+    </body>
+</html>
