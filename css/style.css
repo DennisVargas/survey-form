@@ -11,15 +11,29 @@ html, body {
     justify-content: center;
     background: pink;
 } */
+.checkbox-container{
+    text-align: start;
+}
+.check-item {
+    /* padding-left: 10px; */
+    margin-left:.75em;
+    /* display: block; */
+}
+.check-item-text {
+    margin-left: 1em;
+}
 .form-row{
     display: grid;
-    grid-template-columns: 25em 20em;
+    grid-template-columns: 1fr 1fr;
     flex-direction: row;
     justify-content: center;
     background: green;
+    max-width: 800px;
+    margin: 0 auto;
 }
 .labels{
     background: pink;
+    text-align:end;
 }
 .form-text-inputs{
     background:blue;

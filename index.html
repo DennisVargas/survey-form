@@ -16,7 +16,7 @@
         <h1 id=title>Survey Form</h1>
         <div id="form-content" >
             <p id="description">Let us know how we can improve our service.</p>
-            <form action="" target="_self" id="survey-form"class="form-container">
+            <form action="" target="_self" id="survey-form" class="form-container">
                 <div class="form-row" >
                     <div class="labels">
                         <label for="name">* Name: </label>
@@ -77,17 +77,20 @@
                     <div class="labels">
                         <label for="">What should be improved?<br>(Check all that apply):</label>
                     </div>
-                    <input type="checkbox" name="improve1" id="front-end-projects">Front-end Projects<br>
-                    <input type="checkbox" name="improve2" id="back-end-projects">Back-end Projects<br>
-                    <input type="checkbox" name="improve3" id="data-visualization">Data Visualization<br>
-                    <input type="checkbox" name="improve3" id="data-visualization">Challenges<br>
-                    <input type="checkbox" name="improve3" id="data-visualization">Open Source Community<br>
-                    <input type="checkbox" name="improve3" id="data-visualization">Gitter help rooms<br>
-                    <input type="checkbox" name="improve3" id="data-visualization">Videos<br>
-                    <input type="checkbox" name="improve3" id="data-visualization">City Meetups<br>
-                    <input type="checkbox" name="improve3" id="data-visualization">Wiki<br>
-                    <input type="checkbox" name="improve3" id="data-visualization">Forum<br>
-                    <input type="checkbox" name="improve3" id="data-visualization">Additional Courses<br>
+                    <div class="checkbox-container">
+                        <input class="check-item" type="checkbox" name="improve1" id="front-end-projects"><span class="check-item-text">Front-end Projects<br></span>
+                        <input class="check-item" type="checkbox" name="improve2" id="back-end-projects"><span class="check-item-text">Back-end Projects<br></span>
+                        <input class="check-item" type="checkbox" name="improve3" id="data-visualization"><span class="check-item-text">Data Visualization<br></span>
+                        <input class="check-item" type="checkbox" name="improve4" id="challenges"><span class="check-item-text">Challenges<br></span>
+                        <input class="check-item" type="checkbox" name="improve5" id="open-source-community"><span class="check-item-text">Open Source Community<br></span>
+                        <input class="check-item" type="checkbox" name="improve6" id="gitter-help-rooms"><span class="check-item-text">Gitter help rooms<br></span>
+                        <input class="check-item" type="checkbox" name="improve7" id="videos"><span class="check-item-text">Videos<br></span>
+                        <input class="check-item" type="checkbox" name="improve8" id="city-meetups"><span class="check-item-text">City Meetups<br></span>
+                        <input class="check-item" type="checkbox" name="improve9" id="wiki"><span class="check-item-text">Wiki<br></span>
+                        <input class="check-item" type="checkbox" name="improve10" id="forum"><span class="check-item-text">Forum<br></span>
+                        <input class="check-item" type="checkbox" name="improve11" id="additional-courses"><span class="check-item-text">Additional Courses<br></span>
+                    </div>
+                    
                 </div>
                 <div class="form-row">
                     <div class="labels">
