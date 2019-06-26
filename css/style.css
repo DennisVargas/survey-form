@@ -4,59 +4,90 @@ html, body {
   font-family: 'Raleway', Helvetica, sans-serif;
   min-width: 320px;
 }
-/* .form-container{
-    display: flex;
-    flex-direction: column;
-    
-    justify-content: center;
-    background: pink;
-} */
-.checkbox-container{
-    text-align: start;
-}
-.check-item {
-    /* padding-left: 10px; */
-    margin-left:.75em;
-    /* display: block; */
-}
-.check-item-text {
-    margin-left: 1em;
-}
-.form-row{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    flex-direction: row;
-    justify-content: center;
-    background: green;
-    max-width: 800px;
+
+.form-container{
+    max-width: 900px;
+    padding: 10px;
+    padding-top: 20px;
     margin: 0 auto;
+    background-color:white;
+    width: 75%;
+    border-radius: 4px;
 }
+
 .labels{
-    background: pink;
-    text-align:end;
+    display: inline-block;
+    text-align: right;
+    width: 40%;
+    padding: 5px;
+    vertical-align: top;
+    margin-top: 10px;
+    /* background-color: red; */
 }
-.form-text-inputs{
-    background:blue;
+
+.right-tab{
+    display: inline-block;
+    text-align: left;
+    width: 48%;
+    vertical-align: middle;
+    /* background-color: blueviolet; */
 }
-.form-number-inputs{
-    background: lightgreen;
+
+.input-field{
+    height: 20px;
+    width: 280px;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
 }
-.form-email-inputs{
-    background: yellow;
+
+.form-radio-input, 
+input[type="checkbox"] {
+    float: left;
+    margin-right: 5px;
+  }
+
+.drop-down{
+    height: 35px;
+    width: 140px;
+    padding: 5px;
+    margin: 10px;
+    margin-top: 15px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
 }
-.form-selector{
-    background: red;
+
+.radio, .checkbox {
+    position: relative;
+    left: -43px;
+    margin-left: 10px;
+    display: block;
+    padding-bottom: 10px;
+  }
+
+@media screen and (max-width: 833px) {
+    .input-field {
+        width: 80%;
+    }
+    select {
+        width: 90%;
+    }
+    }
+
+    @media screen and (max-width: 520px) {
+    .labels {
+        width: 100%;
+        text-align: left;
+    }
+    .rightTab {
+        width: 80%;
+        float: left;
+    }
+    .input-field {
+        width: 100%;
+    }
+    select {
+        width: 100%;
+    }
 }
-.form-radio-inputs{
-    color:purple;
-    background: orangered;
-    display: flex;
-    flex-direction: column;
-}
-.radio-row{
-    display:flex;
-    flex-direction: row;
-}
-/* form{
-    background: pink;
-} */
